@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:barterit/screens/loginscreen.dart';
 import 'package:barterit/screens/mainscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:barterit/myconfig.dart';
@@ -30,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('assets/images/splash.jpeg'),
+                    image: AssetImage('assets/images/change item.gif'),
                     fit: BoxFit.cover)),
           ),
           Padding(
@@ -43,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   style: TextStyle(
                       fontSize: 48,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 CircularProgressIndicator(),
                 Text(
@@ -51,7 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.black),
                 )
               ],
             ),
@@ -92,7 +93,7 @@ class _SplashScreenState extends State<SplashScreen> {
               () => Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (content) => MainScreen(user: user))));
+                      builder: (content) => const LoginScreen())));
         }
       }).timeout(const Duration(seconds: 5));
     } else {
@@ -101,7 +102,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Timer(
           const Duration(seconds: 3),
           () => Navigator.pushReplacement(context,
-              MaterialPageRoute(builder: (content) => MainScreen(user: user))));
+              MaterialPageRoute(builder: (content) => const LoginScreen())));
     }
   }
 }
