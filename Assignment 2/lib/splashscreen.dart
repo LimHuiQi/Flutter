@@ -31,8 +31,8 @@ class _SplashScreenState extends State<SplashScreen> {
           Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('assets/images/change item.gif'),
-                    fit: BoxFit.cover)),
+                    image: AssetImage('assets/images/splash.png'),
+                    fit: BoxFit.contain)),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 50, 0, 20),
@@ -44,15 +44,16 @@ class _SplashScreenState extends State<SplashScreen> {
                   style: TextStyle(
                       fontSize: 48,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black),
+                      color: Colors.indigo),
                 ),
+                SizedBox(height: 400),
                 CircularProgressIndicator(),
                 Text(
                   "Version 0.1",
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black),
+                      color: Colors.indigo),
                 )
               ],
             ),
