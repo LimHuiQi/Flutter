@@ -1,0 +1,35 @@
+name: barterit
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^4.0.4
+  http: ^0.13.6
+  shared_preferences: ^2.1.1
+  firebase_auth: ^4.6.1
+  geocoding: ^2.1.0
+  geolocator: ^9.0.2
+  image_picker: ^0.8.8
+  image_cropper: ^4.0.1
+  cached_network_image: ^3.2.3
+  carousel_slider: ^4.2.1
+  intl: ^0.18.1
+  convex_bottom_bar: ^3.2.0
+  url_launcher: ^6.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/eula/
